@@ -1,4 +1,4 @@
-# CS236
+# Instructions
 
 ## Compile
 ```sh
