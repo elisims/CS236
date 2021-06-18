@@ -1,11 +1,11 @@
 # CS236
 
 ## Compile
-```shell
+```sh
 g++ -Wall -Werror -std=c++17 -g *.cpp -o lab_
 ```
 
 ## Execute with specific input
-```shell
+```sh
 ./lab_ input.txt
 ```
