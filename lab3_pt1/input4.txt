@@ -1,0 +1,12 @@
+#This test should result in a "Yes()"
+
+Schemes:
+  eli(X,Y)
+
+Facts:
+  eli('d','e'). #Notice the multi-varible fact
+
+Rules:
+
+Queries:
+  eli('d',Y)? #Query handles multi-variable fact correctly

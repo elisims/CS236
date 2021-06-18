@@ -1,0 +1,12 @@
+#This test should result in a "Yes()"
+
+Schemes:
+  eli(Z)
+
+Facts:
+  eli('e'). #Correctly labeled fact links relation
+
+Rules:
+
+Queries:
+  eli(Y)? #Query handles renaming properly

@@ -1,0 +1,12 @@
+#This test should result in a "No"
+
+Schemes:
+  eli(Z)
+
+Facts:
+	#No fact to link relation
+
+Rules:
+
+Queries:
+  eli(Z)? #Query results in "No"
