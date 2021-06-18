@@ -1,0 +1,25 @@
+#This results in 5 passes, and multiple "Yes()"
+
+Schemes:
+    eli(A,B)
+    syb(C,D)
+    key(E,F)
+
+Facts:
+    eli('1','2').
+    eli('4','3').
+    syb('3','2').
+    key('1','4').
+    key('2','5').
+    key('3','5').
+    key('4','1').
+ 
+Rules:
+    key(A,B) :- eli(A,X),syb(B,X).
+    eli(C,D) :- key(D,C).
+    syb(E,F) :- eli(E,X),key(X,F).
+
+Queries:
+    eli('1',A)?
+    key(X,'5')?
+    eli(E,Z)?

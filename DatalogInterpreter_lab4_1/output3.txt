@@ -1,0 +1,20 @@
+---------+
+Input: 3 |
+---------+
+Schemes populated after 2 passes through the Rules.
+syb('4',B)? Yes(1)
+  B='5'
+key(E,'3')? Yes(1)
+  E='4'
+eli(A,B)? Yes(2)
+  A='1', B='2'
+  A='4', B='3'
+syb(A,B)? Yes(2)
+  A='3', B='2'
+  A='4', B='5'
+key(A,B)? Yes(5)
+  A='1', B='2'
+  A='3', B='5'
+  A='4', B='3'
+  A='5', B='6'
+  A='7', B='8'

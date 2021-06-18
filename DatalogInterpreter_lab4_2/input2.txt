@@ -1,0 +1,18 @@
+#This results in 2 passes, and a "Yes(1)"
+
+Schemes:
+   eli(A)
+   syb(B)
+   key(C)
+   max(A,B,C)
+
+Facts:
+   eli('X').
+   syb('Y').
+   key('Z').
+
+Rules:
+   max(A,B,C) :- eli(A), syb(B), key(C).
+
+Queries:
+   max(A,B,C)?

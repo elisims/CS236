@@ -1,0 +1,6 @@
+---------+
+Input: 2 |
+---------+
+Schemes populated after 2 passes through the Rules.
+max(A,B,C)? Yes(1)
+  A='X', B='Y', C='Z'

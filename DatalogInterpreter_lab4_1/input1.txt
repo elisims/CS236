@@ -1,0 +1,18 @@
+#This results in 1 pass, and a "No"
+
+Schemes:
+  eli(W)
+  syb(X)
+  max(Y)
+  key(Z)
+
+Facts:
+  eli('1'). #Facts established for only two Schemes
+  syb('2').
+
+Rules:
+  key(X) :- eli(X), max(Y).
+#Rule links two Schemes
+
+Queries:
+  key(Z)? #Query would work if Fact was established for max

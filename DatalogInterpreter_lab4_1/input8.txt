@@ -1,0 +1,65 @@
+#This results in 26 passes, and multiple "Yes()"
+
+Schemes:
+  a(x)
+  b(x)
+  c(x)
+  d(x)
+  e(x)
+  f(x)
+  g(x)
+  h(x)
+  i(x)
+  j(x)
+  k(x)
+  l(x)
+  m(x)
+  n(x)
+  o(x)
+  p(x)
+  q(x)
+  r(x)
+  s(x)
+  t(x)
+  u(x)
+  v(x)
+  w(x)
+  x(x)
+  y(x)
+  z(x)
+
+Facts:
+  a('a').
+  b('b').
+  c('c').
+
+Rules:
+  z(x) :- y(x).
+  y(x) :- x(x).
+  x(x) :- w(x).
+  w(x) :- v(x).
+  v(x) :- u(x).
+  u(x) :- t(x).
+  t(x) :- s(x).
+  s(x) :- r(x).
+  r(x) :- q(x).
+  q(x) :- p(x).
+  p(x) :- o(x).
+  o(x) :- n(x).
+  n(x) :- m(x).
+  m(x) :- l(x).
+  l(x) :- k(x).
+  k(x) :- j(x).
+  j(x) :- i(x).
+  i(x) :- h(x).
+  h(x) :- g(x).
+  g(x) :- f(x).
+  f(x) :- e(x).
+  e(x) :- d(x).
+  d(x) :- c(x).
+  c(x) :- b(x).
+  b(x) :- a(x).
+
+Queries:
+  x(x)?
+  z('a')? #Finds 'a' after linking of relations

@@ -1,0 +1,29 @@
+---------+
+Input: 7 |
+---------+
+Schemes populated after 2 passes through the Rules.
+snap('67890','Van Pelt','34 Pear','555-5678')? Yes(1)
+snap(S,N,A,P)? Yes(7)
+  S='11122', N='Key Peel', A='64 Bear', P='655-2678'
+  S='12345', N='Snoopy', A='12 Apple', P='555-1234'
+  S='23098', N='Syb Sims', A='14 Creed', P='255-6678'
+  S='67890', N='Van Pelt', A='34 Pear', P='555-5678'
+  S='78789', N='Jax Limb', A='74 Fish', P='455-9678'
+  S='82392', N='Eli Sims', A='24 Apple', P='155-7678'
+  S='98543', N='Max Sims', A='54 Clam', P='355-8678'
+clap(S,N,A,P)? Yes(7)
+  S='11122', N='Key Peel', A='64 Bear', P='655-2678'
+  S='12345', N='Snoopy', A='12 Apple', P='555-1234'
+  S='23098', N='Syb Sims', A='14 Creed', P='255-6678'
+  S='67890', N='Van Pelt', A='34 Pear', P='555-5678'
+  S='78789', N='Jax Limb', A='74 Fish', P='455-9678'
+  S='82392', N='Eli Sims', A='24 Apple', P='155-7678'
+  S='98543', N='Max Sims', A='54 Clam', P='355-8678'
+NameHasID('Snoopy',Id)? Yes(1)
+  Id='12345'
+NameHasID(Name,'67890')? Yes(1)
+  Name='Van Pelt'
+NameHasID(Name,'23098')? Yes(1)
+  Name='Syb Sims'
+stalk('Syb Sims',Address,Phone)? Yes(1)
+  Address='14 Creed', Phone='255-6678'

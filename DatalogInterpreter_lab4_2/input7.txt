@@ -1,0 +1,32 @@
+#This results in 2 passes, and multiple "Yes()"
+
+Schemes:
+  snap(s,n,a,p)
+  clap(s,n,a,p)
+  stalk(n,a,p)
+  NameHasID(n,s)
+
+Facts:
+  snap('12345','Snoopy','12 Apple','555-1234').
+  snap('67890','Van Pelt','34 Pear','555-5678').
+  snap('82392','Eli Sims','24 Apple','155-7678').
+  snap('23098','Syb Sims','14 Creed','255-6678').
+  snap('98543','Max Sims','54 Clam','355-8678').
+  snap('78789','Jax Limb','74 Fish','455-9678').
+  snap('11122','Key Peel','64 Bear','655-2678').
+#Added 5 extra "snap()" to test speed
+
+Rules:
+  NameHasID(N,S) :- snap(S,N,A,P).
+  clap(S,N,A,P) :- snap(S,N,A,P).
+  stalk(N,A,P) :- snap(S,N,A,P).
+#Added 2 extra rules to test speed adjustment
+
+Queries:
+  snap('67890','Van Pelt','34 Pear','555-5678')?
+  snap(S,N,A,P)?
+  clap(S,N,A,P)?
+  NameHasID('Snoopy',Id)?
+  NameHasID(Name,'67890')?
+  NameHasID(Name,'23098')?
+  stalk('Syb Sims',Address,Phone)? #Attempt stalk feature

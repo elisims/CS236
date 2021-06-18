@@ -1,0 +1,5 @@
+---------+
+Input: 1 |
+---------+
+Schemes populated after 1 passes through the Rules.
+key(Z)? No

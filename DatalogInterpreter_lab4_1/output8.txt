@@ -1,0 +1,9 @@
+---------+
+Input: 8 |
+---------+
+Schemes populated after 26 passes through the Rules.
+x(x)? Yes(3)
+  x='a'
+  x='b'
+  x='c'
+z('a')? Yes(1)
