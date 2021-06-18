@@ -1,0 +1,15 @@
+#This test results in Failure!
+
+Schemes:
+  snap(X,Y)
+
+Facts:
+  allergies('Yes','No').
+
+Rules:
+  StudentAddressMatching(X,Y) :- snap(Y,X).
+
+Queries:
+  NameHasID('Elias',Id)?
+
+???????????????????? #Tokens at the end of the file trigger an error
