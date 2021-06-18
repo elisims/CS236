@@ -1,0 +1,22 @@
+---------+
+Input: 6 |
+---------+
+Success!
+Schemes(1):
+  SK(A,B)
+Facts(4):
+  SK('a','c')
+  SK('b','c')
+  SK('b','b')
+  SK('b','c')
+Rules(1):
+  DoNothing(Z) :- Stuff(Z)
+Queries(4):
+  SK(A,'c')
+  SK('b','c')
+  SK(X,X)
+  SK(A,B)
+Domain(3):
+  'a'
+  'b'
+  'c'

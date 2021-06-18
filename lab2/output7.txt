@@ -1,0 +1,12 @@
+---------+
+Input: 7 |
+---------+
+Success!
+Schemes(1):
+  snap(A,B,C,D)
+Facts(0):
+Rules(0):
+Queries(1):
+  NameHasID('Elias',Id)
+Domain(1):
+  'Elias'
