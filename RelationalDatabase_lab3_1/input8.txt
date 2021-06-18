@@ -1,0 +1,12 @@
+#This is the example number 3 on the project 3 page
+
+Schemes: 
+	dc(D,C)
+Facts:
+	dc('ralph','howard').
+Rules:
+
+Queries:
+	dc('ralph', X)?
+	dc('bob','bob')?
+	dc(X,Y)?

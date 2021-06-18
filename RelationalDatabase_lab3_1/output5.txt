@@ -1,0 +1,19 @@
+---------+
+Input: 5 |
+---------+
+eli('b',E)? No
+
+eli('a',E)? Yes(1)
+  E='z'
+
+syb(F,'e')? No
+
+max(H,Y)? Yes(3)
+  H='b', Y='c'
+  H='c', Y='d'
+  H='d', Y='e'
+
+key(H,'b')? No
+
+jax('k',Z)? Yes(1)
+  Z='b'
